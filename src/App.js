@@ -85,7 +85,7 @@ class App extends Component {
         this.state.input)
       .then(response => {
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://radiant-ocean-79324.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -139,6 +139,7 @@ class App extends Component {
              : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
             )
         }
+        <h2>Created by Danish Asghar</h2>
       </div>
     );
   }
